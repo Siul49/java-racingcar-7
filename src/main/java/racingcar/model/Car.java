@@ -6,7 +6,6 @@ public class Car{
     private int SpeedPerSecond;
     private int score;
     private String name;
-    private
 
     Car(String carName){
         SpeedPerSecond = Randoms.pickNumberInRange(0,9);
