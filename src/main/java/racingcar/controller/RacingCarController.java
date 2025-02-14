@@ -6,8 +6,8 @@ import racingcar.view.*;
 import racingcar.model.Car;
 
 public class RacingCarController{
-    int numbersOfCar = input.Cars.size();
-    Car[] car = new Car[numbersOfCar];
+    public static int numbersOfCar = input.Cars.size();
+    public static Car[] car = new Car[numbersOfCar];
 
     public void setCarName(){
         for (int i = 0; i < numbersOfCar; i++){
@@ -21,8 +21,8 @@ public class RacingCarController{
             for (int i = 0; i < numbersOfCar; i++) {
                 int randomDistance = Randoms.pickNumberInRange(0, 9);
                 car[i].Distance += randomDistance;
-
             }
+
             output.displayPresentSituation();
         }
     }

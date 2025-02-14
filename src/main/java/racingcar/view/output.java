@@ -6,7 +6,6 @@ import racingcar.model.Car;
 
 public class output{
 
-
     public static void displayPresentSituation(){
 
     }

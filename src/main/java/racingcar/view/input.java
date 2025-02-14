@@ -28,6 +28,7 @@ public class input{
     public void setTrial(){
         trial = Integer.parseInt(Console.readLine());
     }
+
     public static int getTrial(){
         return trial;
     }
