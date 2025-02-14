@@ -8,6 +8,9 @@ public class input{
     private int trial;
     public ArrayList<String> Cars = new ArrayList<>();
 
+    public input(){
+        trial = 0;
+    }
     public ArrayList<String> getCarName(){
         return Cars;
     }
@@ -17,8 +20,13 @@ public class input{
         StringTokenizer separatedCarNames = new StringTokenizer(CarNames, ",");
 
         while(separatedCarNames.hasMoreTokens()){
-            String oneOfCarName = separatedCarNames.nextToken().trim();
-            Cars.add(oneOfCarName);
+            if (separatedCarNames.nextToken().trim().length() < 5) {
+                String oneOfCarName = separatedCarNames.nextToken().trim();
+                Cars.add(oneOfCarName);
+            }
+            else {
+                throw new IllegalArgumentException("다섯 글자가 넘어요");
+            }
         }
     }
 

@@ -7,7 +7,7 @@ import racingcar.model.Car;
 import java.util.ArrayList;
 
 public class RacingCarController{
-    public int numbersOfCar;
+    public int numbersOfCar = 1;
     public Car[] car = new Car[numbersOfCar];
 
     public void setCar(ArrayList<String> carName){

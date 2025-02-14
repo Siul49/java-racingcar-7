@@ -1,8 +1,8 @@
 package racingcar;
 
-import racingcar.view.*;
+
 import racingcar.controller.*;
-import racingcar.model.*;
+
 
 public class Application {
     public static void main(String[] args) {
