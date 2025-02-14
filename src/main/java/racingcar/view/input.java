@@ -1,20 +1,18 @@
 package racingcar.view;
 
-import racingcar.model.Car;
 import java.util.StringTokenizer;
-
 import camp.nextstep.edu.missionutils.Console;
-
-import java.util.List;
 import java.util.ArrayList;
-import racingcar.model.Car;
 
 public class input{
-    private static int trial;
-    public static ArrayList<String> Cars = new ArrayList<>();
+    private int trial;
+    public ArrayList<String> Cars = new ArrayList<>();
 
+    public ArrayList<String> getCarName(){
+        return Cars;
+    }
 
-    public void getCarName() {
+    public void setCarName() {
         String CarNames = Console.readLine();
         StringTokenizer separatedCarNames = new StringTokenizer(CarNames, ",");
 
@@ -22,14 +20,13 @@ public class input{
             String oneOfCarName = separatedCarNames.nextToken().trim();
             Cars.add(oneOfCarName);
         }
-
     }
 
     public void setTrial(){
         trial = Integer.parseInt(Console.readLine());
     }
 
-    public static int getTrial(){
+    public int getTrial(){
         return trial;
     }
 }
